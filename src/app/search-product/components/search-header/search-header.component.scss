@@ -1,0 +1,35 @@
+.sh-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-color {
+    color: grey;
+}
+
+.icon-size {
+    height: 36px;
+    width: 36px;
+    font-size: 36px;
+}
+
+.search-box {
+    width: 300px;
+}
+
+.matInput {
+    margin: 0;
+    padding-left: 5px;
+    vertical-align: super;
+}
+  
+@media screen and (max-width: 480px) {
+    .icon-size {
+        height: 24px;
+        width: 24px;
+        font-size: 24px;
+    }
+    .search-box {
+        width: 200px;
+    }
+}

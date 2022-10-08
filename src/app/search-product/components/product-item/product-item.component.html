@@ -1,0 +1,28 @@
+<mat-card class="product-card">
+    <img mat-card-image src="{{productItem.images[0]}}" alt="Product image">
+    <mat-card-content>
+      <div class="product_title">{{productItem.title}}</div>
+      <div class="product_offerP">{{productItem.offerPrice}}</div>
+      <div>
+          <span class="product_originalP">{{productItem.originalPrice}}</span>
+          <span class="product_offerRate">{{productItem.offerRate}} %</span>
+      </div>
+      <div class="product_merchant">
+        <img src="{{productItem.badgeUrl}}" alt="Product image">
+        <div class="product_merchant_location">{{productItem.location}} 
+          <span *ngIf="productItem.numLocations > 0">& {{productItem.numLocations}} kota lainnya</span>
+        </div>
+      </div>
+      <div *ngIf="productItem.review" class="product_rating_section">
+          <mat-icon class="star-icon" >star</mat-icon>
+          <div>{{productItem.review.absoluteRating}} </div>
+          <div class="product_review_count">({{productItem.review.count}})</div>
+          <div class="product_review_soldRangeCount" *ngIf="productItem.soldRangeCount">
+            Terjual {{productItem.soldRangeCount.id}}
+          </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="product_btn" mat-flat-button >Lihat detail</button>
+    </mat-card-actions>
+  </mat-card>

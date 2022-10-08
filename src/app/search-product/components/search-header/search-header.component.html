@@ -1,0 +1,13 @@
+<div class="sh-container">
+    <mat-icon class="icon-color icon-size">keyboard_backspace</mat-icon>
+    <mat-form-field appearance="fill" class="search-box">
+        <span matPrefix><mat-icon class="icon-color" >search</mat-icon></span>
+        <input class="matInput" placeholder="Search" matInput type="text" [(ngModel)]="value">
+        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+            <mat-icon class="icon-color" >cancel</mat-icon>
+        </button>
+    </mat-form-field>
+    <mat-icon class="icon-color icon-size" >grid_view</mat-icon>
+    <mat-icon class="icon-color icon-size" >local_mall</mat-icon>
+    <mat-icon class="icon-color icon-size" fontIcon="home"></mat-icon>
+</div>
