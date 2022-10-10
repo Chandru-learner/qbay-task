@@ -1,0 +1,10 @@
+<div class="carousal-container">
+    <img mat-card-image src="{{productImages[activeIndex]}}" alt="Product image">
+
+    <a *ngIf="productImages.length > 1" class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a *ngIf="productImages.length > 1" class="next" (click)="plusSlides(1)">&#10095;</a>
+    
+    <div class="dot-container" *ngIf="productImages.length > 1">
+        <span *ngFor="let item of productImages; let i = index" (click)="activeIndex = i" [ngClass]="{'activeDot': i === activeIndex}" class="dot"></span>
+    </div>
+</div>

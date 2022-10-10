@@ -9,7 +9,7 @@ import { SearchProductService } from '../../search-product.service';
 })
 export class SearchHeaderComponent implements OnInit, OnDestroy {
 
-  searchTerm = "samsung";
+  searchTerm = "";
   totalCartCount = 0;
   cartIemsSub: Subscription | undefined;
   constructor(private searchProductService: SearchProductService) { }

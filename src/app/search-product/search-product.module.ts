@@ -5,6 +5,7 @@ import { SearchPageComponent } from './components/search-page/search-page.compon
 import { MaterialModule } from 'src/material/material.module';
 import { FormsModule } from '@angular/forms';
 import { ProductItemComponent } from './components/product-item/product-item.component';
+import { ProductImageCarouselComponent } from './components/product-image-carousel/product-image-carousel.component';
 
 
 
@@ -12,7 +13,8 @@ import { ProductItemComponent } from './components/product-item/product-item.com
   declarations: [
     SearchHeaderComponent,
     SearchPageComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ProductImageCarouselComponent
   ],
   imports: [
     CommonModule,

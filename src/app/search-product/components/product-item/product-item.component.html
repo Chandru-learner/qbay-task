@@ -1,5 +1,5 @@
 <mat-card class="product-card" *ngIf="productItem">
-    <img mat-card-image src="{{productItem.images[0]}}" alt="Product image">
+    <app-product-image-carousel [productImages]="productItem.images" ></app-product-image-carousel>
     <mat-card-content>
       <div class="product_title">{{productItem.title}}</div>
       <div class="product_offerP">{{productItem.offerPrice}}</div>
