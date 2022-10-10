@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 20px 10px;
+    max-width: 1000px;
 }
 .icon-color {
     color: grey;
@@ -15,6 +17,13 @@
 
 .search-box {
     width: 300px;
+}
+
+.search-btn-icon {
+    background-color: #0aa2d8;
+    & .icon-color {
+        color: white;
+    }
 }
 
 .matInput {
@@ -31,5 +40,11 @@
     }
     .search-box {
         width: 200px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .search-box {
+        width: 140px;
     }
 }

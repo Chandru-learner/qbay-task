@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://www.blibli.com/backend/",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+}

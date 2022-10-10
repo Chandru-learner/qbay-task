@@ -1,2 +1,11 @@
-<app-search-header></app-search-header>
-<app-product-item></app-product-item>
+<div class="search-page-container" (scroll)="onScroll($event)">
+    <app-search-header class="search-header"></app-search-header>
+    
+    <div class="search_result_container">
+        <app-product-item *ngFor="let product of productList" [productItem]="product" ></app-product-item>
+    </div>
+
+    <div *ngIf="loading" class="loader">
+        <mat-spinner ></mat-spinner>
+    </div>
+</div>
