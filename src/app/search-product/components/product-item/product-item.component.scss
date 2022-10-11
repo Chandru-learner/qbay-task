@@ -1,5 +1,4 @@
 .product-card {
-    max-width: 225px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -46,6 +45,7 @@
     font-weight: bold;
     padding: 5px;
     border-radius: 8px;
+    font-size: 16px;
 }
 
 .product_merchant {
@@ -103,21 +103,15 @@
     justify-content: flex-end;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 769px) {
     .product-card {
-        max-width: 200px;
+        max-width: 300px;
     }
 }
 
-@media screen and (max-width: 510px) {
-    .product-card {
-        max-width: 160px;
-    }
-}
 
 @media screen and (max-width: 424px) {
     .product-card {
-        max-width: 125px;
         font-size: 12px;
     }
 
@@ -125,7 +119,7 @@
         font-size: 12px;
     }
 
-    .product_title, .product_offerP {
+    .product_title, .product_offerP, .product_btn {
         font-size: 14px;
     }
     .product_rating_section {
@@ -135,7 +129,6 @@
 
 @media screen and (max-width: 374px) {
     .product-card {
-        max-width: 115px;
         margin: 5px;
     }
 
