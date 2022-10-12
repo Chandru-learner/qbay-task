@@ -1,6 +1,11 @@
 <div class="search-page-container" (scroll)="onScroll($event)">
     <app-search-header class="search-header"></app-search-header>
     
+    <div class="info">
+        <span>Ini hasil yang paling relevan. Lihat selengkapnya di </span>
+        <span class="info-highlight"> semua kategori</span>
+    </div>
+
     <div class="search_result_container">
         <app-product-item *ngFor="let product of productList" [productItem]="product" ></app-product-item>
     </div>

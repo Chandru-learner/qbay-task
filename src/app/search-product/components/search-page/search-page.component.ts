@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { SAMPLE_PRODUCT_LIST } from '../../sample-data';
 import { PageInfo, ProductItem, SearchProductService } from '../../search-product.service';
 
 @Component({
@@ -9,6 +10,8 @@ import { PageInfo, ProductItem, SearchProductService } from '../../search-produc
 })
 export class SearchPageComponent implements OnInit, OnDestroy {
 
+  
+  // productList: ProductItem[] = SAMPLE_PRODUCT_LIST;
   productList: ProductItem[] = [];
   loading: boolean = false;
   private searchListSubs: Subscription | undefined;
